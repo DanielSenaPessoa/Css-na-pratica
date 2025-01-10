@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Colaboradores</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      width: 300px;
+      background-color: #f9f9f9;
+    }
+    .card-header {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .form-group {
+      margin-bottom: 10px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 5px;
+      font-size: 14px;
+    }
+    .actions {
+      display: flex;
+      gap: 10px;
+    }
+    button {
+      padding: 8px 12px;
+      font-size: 14px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn-save {
+      background-color: #28a745;
+      color: white;
+    }
+    .btn-cancel {
+      background-color: #dc3545;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Galeria de Colaboradores</h1>
+  <button id="addCollaborator">Adicionar Colaborador</button>
+  <div id="gallery" class="gallery"></div>
+
+  <script>
+    // Dados iniciais
+    const colaboradores = [
+      { id: 1, nome: "João", cargo: "Analista" },
+      { id: 2, nome: "Maria", cargo: "Desenvolvedora" }
+    ];
+
+    const gallery = document.getElementById("gallery");
+    const addCollaboratorButton = document.getElementById("addCollaborator");
+
+    // Função para criar o layout de um colaborador
+    function createCollaboratorCard(colaborador) {
+      const card = document.createElement("div");
+      card.className = "card";
+      card.id = `collaborator-${colaborador.id}`;
+
+      card.innerHTML = `
+        <div class="card-header">${colaborador.nome} (${colaborador.cargo})</div>
+        <div class="form-group">
+          <label for="days-${colaborador.id}">Dias de Medição:</label>
+          <input type="number" id="days-${colaborador.id}" placeholder="Dias">
+        </div>
+        <div class="form-group">
+          <label for="value-${colaborador.id}">Valor do Serviço:</label>
+          <input type="number" id="value-${colaborador.id}" placeholder="R$">
+        </div>
+        <div class="actions">
+          <button class="btn-save" onclick="saveCollaborator(${colaborador.id})">Salvar</button>
+          <button class="btn-cancel" onclick="cancelCollaborator(${colaborador.id})">Cancelar</button>
+        </div>
+      `;
+
+      gallery.appendChild(card);
+    }
+
+    // Função para inicializar a galeria
+    function loadCollaborators() {
+      colaboradores.forEach(colaborador => createCollaboratorCard(colaborador));
+    }
+
+    // Função para adicionar novo colaborador
+    addCollaboratorButton.addEventListener("click", () => {
+      const newId = colaboradores.length + 1;
+      const newColaborador = {
+        id: newId,
+        nome: `Colaborador ${newId}`,
+        cargo: "Novo Cargo"
+      };
+      colaboradores.push(newColaborador);
+      createCollaboratorCard(newColaborador);
+    });
+
+    // Função para salvar colaborador (simulação)
+    function saveCollaborator(id) {
+      const days = document.getElementById(`days-${id}`).value;
+      const value = document.getElementById(`value-${id}`).value;
+      alert(`Dados salvos para colaborador ${id}: Dias = ${days}, Valor = ${value}`);
+    }
+
+    // Função para cancelar (simulação)
+    function cancelCollaborator(id) {
+      alert(`Edição cancelada para colaborador ${id}`);
+    }
+
+    // Inicializa a aplicação
+    loadCollaborators();
+  </script>
+</body>
+</html>
