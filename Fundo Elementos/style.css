@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro");
+
+body {
+    font-family: 'Crimson Pro', serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+.exemplo {
+    width: 300px;
+    height: 300px;
+    border:15px dashed palegreen;
+    background-image: url("https://www.google.com.br/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png");
+    background-size:120px ;
+    background-repeat: no-repeat;
+    background-position: bottom 10px right 20px;
+    background-color: palevioletred;
+    background-clip: content-box;
+    background-blend-mode: color-burn;
+}
+ 

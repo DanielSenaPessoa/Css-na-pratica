@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens</title>
+    <style>
+        div {
+            border: 5px solid blue; 
+            width: 200px;
+            height: 300px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-position: right center;
+           
+        }
+        #contain {
+            object-fit: contain;
+        }
+        #cover {
+            object-fit: cover;
+        }
+        #none {
+            object-fit: none;
+        }
+        #scale-down {
+            object-fit: scale-down;
+        }
+    </style> 
+</head>
+<body>
+    <h1>Propriedade <code>object-fit</code> </h1>
+    <code>object-fit: fill;</code> (padrão)
+    <div>
+        <img src="https://i.pinimg.com/474x/d8/ba/8a/d8ba8a1b747682d7a91a76fedf7660b0.jpg" alt="" id="fill">
+    </div>
+    <br>
+    <h1>Propriedade <code>object-fit</code> </h1>
+    <code>object-fit: contain;</code> 
+    <div>
+        <img src="https://i.pinimg.com/474x/d8/ba/8a/d8ba8a1b747682d7a91a76fedf7660b0.jpg" alt="" id="contain">
+    </div>
+    <br>
+    <h1>Propriedade <code>object-fit</code> </h1>
+    <code>object-fit: cover;</code> 
+    <div>
+        <img src="https://i.pinimg.com/474x/d8/ba/8a/d8ba8a1b747682d7a91a76fedf7660b0.jpg" alt="" id="cover">
+    </div>
+    <br>
+    <h1>Propriedade <code>object-fit</code> </h1>
+    <code>object-fit: none;</code> 
+    <div>
+        <img src="https://i.pinimg.com/474x/d8/ba/8a/d8ba8a1b747682d7a91a76fedf7660b0.jpg" alt="" id="none">
+    </div> 
+    <br>
+    <h1>Propriedade <code>object-fit</code> </h1>
+    <code>object-fit: scale-down;</code> 
+    <div>
+        <img src="https://i.pinimg.com/474x/d8/ba/8a/d8ba8a1b747682d7a91a76fedf7660b0.jpg" alt="" id="scale-down">
+    </div>
+    <br>
+    <h1>Propriedade <code>object-fit</code> </h1>
+    <code>object-fit: nomal;</code> 
+    <div>
+        <img src="https://i.pinimg.com/474x/d8/ba/8a/d8ba8a1b747682d7a91a76fedf7660b0.jpg" alt="" id="">
+    </div>
+     
+</body>
+</html>
