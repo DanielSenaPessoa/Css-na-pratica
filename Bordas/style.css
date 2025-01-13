@@ -1,0 +1,24 @@
+.Exemplo {
+    width: 200px;
+    height: 200px;
+    background: black;
+    border: 30px solid;   
+}
+#exemplo-1 {
+    border-image-source: url('https://media.istockphoto.com/id/994915004/pt/foto/cute-and-curious-owlet-staring.jpg?s=612x612&w=0&k=20&c=FcWp7nz-ya6_aiGxwXLKmjaBR6CWRr7ecfALPA5IlbQ=');
+    border-image-repeat: round;
+    border-image-slice: 160;
+    
+    
+}
+#exemplo-2 {
+    border-image-source: linear-gradient(red,blue);
+    border-image-slice: 10;
+    border-image-width: 1px;
+    border-image-outset: 2px;
+}
+#exemplo-3 {
+    border-image: url('https://www.shutterstock.com/image-vector/ramadan-icon-100px-x-260nw-1104059588.jpg') 169 / 10px / 1 repeat;
+
+
+}
