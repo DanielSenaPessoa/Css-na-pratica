@@ -1,0 +1,60 @@
+#capitalizar {
+    text-transform: capitalize;
+}
+#upper {
+    text-transform: uppercase;
+}
+#lower {
+    text-transform: lowercase;
+}
+#left {
+    text-align: left;
+}
+#right {
+    text-align: right;
+}
+#center {
+    text-align: center;
+}
+#justify {
+    text-align: justify;
+}
+#underline {
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: red;
+    text-decoration-thickness: 5px;
+}
+#overline {
+    text-decoration: overline wavy blue 2px;
+}
+#line-through {
+    text-decoration: line-through;
+}
+#none {
+    text-decoration: none;
+}
+#ident {
+    text-indent: 50px;
+}
+#letter-spacing {
+    letter-spacing: 5px;
+}
+#word-spacing {
+    word-spacing: 10px;
+}
+#pre-line {
+    white-space: pre-line;
+}
+#pre {
+    white-space: pre;
+}
+#nowrap {
+    white-space: nowrap;
+}
+#pre-wrap {
+    white-space: pre-wrap;
+}
+
+
+

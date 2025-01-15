@@ -1,0 +1,23 @@
+div {
+    width: 200px;
+    height: 200px;
+    border: 10px solid red;
+    margin: 20px auto;
+    background: #fa8072;
+
+    box-shadow:inset 10px 10px 20px 10px rgba(0, 0, 0, 0.5), 10px 10px 20px 10px rgba(0, 0, 0, 0.5);
+}
+img {
+    width: 1000px;
+    height: 300px;
+    margin: 20px auto;
+    object-fit: cover;
+    filter: drop-shadow(10px 10px 10px gray);
+
+}
+h2 {
+    color: #fa8072;
+    font-size: 40px;
+    text-align: center ;
+    text-shadow: 10px 10px 10px gray;
+}
