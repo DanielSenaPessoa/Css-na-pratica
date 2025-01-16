@@ -1,0 +1,86 @@
+body {
+    background: black;
+    color: white;
+}
+.exemplo-pixel {
+    font-size: 30px;
+    background-color: lightblue;
+    width: 300px;
+}
+.exemplo-porcentagem {
+    font-size: 30px;
+    background-color: lightgreen;
+    width: 50%;
+}
+#Elemento-pai {
+    width: 500px;
+    font-size: 40px;
+    border: 5px solid red;
+}
+.Elemento-pai-em {
+    font-size: 20px;
+    background-color: lightcoral;
+    width: 50%;
+}
+.exemplo-em1 {
+    font-size: 2em;
+    background-color: lightcoral;
+
+}
+.exemplo-em2 {
+    font-size: 2em;
+    background-color: lightcoral;
+}
+.Elemento-pai-rem {
+    font-size: 20px;
+    background-color: lightcoral;
+    width: 50%;
+}
+.exemplo-rem1{
+    font-size: 2rem;
+    background-color: lightcoral;
+}
+.exemplo-rem2 {
+    font-size: 2rem;
+    background-color: lightcoral;
+}
+.exemplo-vw {
+    font-size: 30px;
+    background-color: lightblue;
+    width: 50vw;
+}
+.exemplo-vh {
+    font-size: 30px;
+    background-color: lightgreen;
+    width: 50vh;
+}
+.exemplo-vmin {
+    font-size: 30px;
+    background-color: lightcoral;
+    width: 50vmin;
+}
+.exemplo-vmax {
+    font-size: 30px;
+    background-color: lightcoral;
+    width: 50vmax;
+}
+.exemplo-ex {
+    font-size: 30px;
+    background-color: lightcoral;
+    width: 50ex;
+}
+.exemplo-ch {
+    font-size: 30px;
+    background-color: lightcoral;
+    width: 50ch;
+}
+.exemplo-calc {
+    font-size: 30px;
+    background-color: lightcoral;
+    width: calc(50% - 50px);
+}
+.exemplo-calc2 {
+    font-size: 30px;
+    background-color: green;
+    width: calc(100% - 10px);
+}

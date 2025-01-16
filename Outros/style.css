@@ -1,0 +1,48 @@
+.exemplo {
+    background-color: purple;
+    border: 5px solid orange;
+    color: white;
+    padding: 20px;
+   
+}
+.exemplo img {
+    width: 50%;
+    opacity: 0.5;
+}
+.exemplo2 {
+    background-color: orange;
+    border: 5px solid orange;
+    color: black;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+.exemplo3 {
+    background-color: orange;
+    border: 5px solid orange;
+    color: black;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.exemplo4 {
+    background-color: orange;
+    border: 5px solid orange;
+    color: black;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    overflow: scroll;
+}
+.exemplo5 {
+    background-color: orange;
+    border: 5px solid orange;
+    color: black;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    overflow: visible;
+}
