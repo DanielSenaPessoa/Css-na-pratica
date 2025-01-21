@@ -8,12 +8,38 @@
 </head>
 <body>
     <h1>Display block</h1>
-    <div class="exemplo" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo corporis aspernatur esse! Commodi, iste fugiat cumque sint tempore, non ab magni laboriosam placeat nemo distinctio odit aspernatur voluptate quibusdam?</div>
-    <div class="exemplo">Exemplo 01 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam dolorem modi optio esse aliquid aspernatur, cum sint ab quas totam nostrum veritatis delectus earum alias quo velit asperiores, praesentium possimus!</div>
-    <p class="exemplo">ASDASDASDAS</P>
-    <span class="exemplo">texte</span>
-    <span class="exemplo">texte</span>
-    <em class="exemplo">asdasdasdasdasdasdasdasdasdasdasdasdasdasd</em>
-    <b class="exemplo">asdsadasdasdasdasdd</b>
+    <div class="exemplo1" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo corporis aspernatur esse! Commodi, iste fugiat cumque sint tempore, non ab magni laboriosam placeat nemo distinctio odit aspernatur voluptate quibusdam?</div>
+    <div class="exemplo1">Exemplo 01 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam dolorem modi optio esse aliquid aspernatur, cum sint ab quas totam nostrum veritatis delectus earum alias quo velit asperiores, praesentium possimus!</div>
+    <p class="exemplo1">ASDASDASDAS</P>
+    <span class="exemplo1">texte</span>
+    <span class="exemplo1">texte</span>
+    <em class="exemplo1">asdasdasdasdasdasdasdasdasdasdasdasdasdasd</em>
+    <b class="exemplo1">asdsadasdasdasdasdd</b>
+    <div id="card"><div id="carddolado"></div></div>
+    <hr>
+    <div id="elemento-1" class="exemplo inline">elemento 01</div>
+    <div id="elemento-2" class="exemplo inline">elemento 02</div>
+    <div id="elemento-3" class="exemplo inline">elemento 03</div>
+    <div id="elemento-4" class="exemplo inline">Passe o mouse aqui!</div>
+    <script>
+        const elemento = document.getElementById('elemento-4');
+      
+        elemento.addEventListener('mousemove', (event) => {
+          const rect = elemento.getBoundingClientRect(); // Obtem o tamanho e a posição do elemento
+          const mouseX = event.clientX - rect.left; // Posição X relativa ao elemento
+          const mouseY = event.clientY - rect.top;  // Posição Y relativa ao elemento
+      
+          const offsetX = (mouseX / rect.width - 0.5) * 10; // Calcula deslocamento horizontal
+          const offsetY = (mouseY / rect.height - 0.5) * 10; // Calcula deslocamento vertical
+      
+          elemento.style.transform = `translate(${offsetX}px, ${offsetY}px)`; // Aplica o movimento
+        });
+      
+        elemento.addEventListener('mouseleave', () => {
+          elemento.style.transform = 'translate(0, 0)'; // Reseta a posição ao sair do hover
+        });
+      </script>
+      
+      
 </body>
 </html>
