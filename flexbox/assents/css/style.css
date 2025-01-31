@@ -3,12 +3,31 @@ color: white;
 }
 .container {background: green;
     padding: 20px;
+    margin: 20px;
     display: flex;
+    width:300px;
+
+}
+.container-1 {background: rgb(176, 176, 190);
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    width:300px;
 }
 .item {background: red;
     margin: 10px;
 }
-#container-01 {flex-direction: row;
+#container-01 {flex-flow: row wrap;
 }
-#container-02 {flex-direction: column;
+#container-02 {
+    height: 300px;
+    flex-flow: column wrap-reverse;
 }
+hr {
+    color: white;
+}
+#container-03 {
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+}
+
