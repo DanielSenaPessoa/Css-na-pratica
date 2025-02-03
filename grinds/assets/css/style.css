@@ -18,8 +18,14 @@
     padding: 10px;
     margin-bottom: 20px;
     display:grid;
-    grid-template-columns: 200px 200px 200px; 
-    grid-template-rows:200px 100px ;
+    
+    grid-template-columns:repeat(3, 1fr); 
+    /*tem a opção de reapt(3, 1fr 2fr) */
+    grid-template-rows:repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    /*repreat(auto-fill,monmkax(100px,1fr)); serve para deixar marcado os demais espaço*/
 }
 .container3 .item {
     border: 1px solid black;
@@ -42,3 +48,7 @@
 .item-06 {
     background-color: aqua;
 }
+.item-07 {
+    background-color: rgb(44, 201, 96);
+}
+
